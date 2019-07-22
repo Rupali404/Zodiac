@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+	function validateForm(){
+		var x= document.forms["myForm"]["fmonth"].value;
+		var y= document.forms["myForm"]["fdate"].value;
+		if(x=="" )
+		{
+
+			alert("Filled Content");
+			return false;
+		}
+		if(y=="")
+		{
+			alert("filled content");
+			return false;
+		}
+		else
+		{
+			alert("sucessfully");
+		}
+	}
+
+</script>
+</head>
+<body>
+	<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+		Month:<input type="text" name="fmonth" >
+		Date:<input type="text" name="fdate">
+		<input type="Submit" value="submit">
+</body>
+</html>
